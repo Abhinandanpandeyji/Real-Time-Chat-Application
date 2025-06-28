@@ -3,14 +3,22 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+	"homepage": "https://Abhinandanpandeyji.github.io/Real-Time-Chat-Application",
+
+  
+	"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+},
+
+
   "dependencies": {
     "axios": "^1.7.7",
+    "gh-pages": "^6.3.0",
     "lucide-react": "^0.459.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
